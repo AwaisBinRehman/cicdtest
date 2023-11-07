@@ -3,7 +3,7 @@ name: Deploy Angular App to Azure
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
