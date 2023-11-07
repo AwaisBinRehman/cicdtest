@@ -23,7 +23,6 @@ jobs:
 
       - name: Build Angular App
         run: |
-          cd Web_UI  # Change directory to your Angular app
           npm install --f
           ng build --prod
 
