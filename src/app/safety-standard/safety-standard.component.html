@@ -1,0 +1,88 @@
+<!-- safety-points.component.html -->
+<!-- safety-points.component.html -->
+<div class="team-section">
+  <div class="heading-teams">
+    <h2 class="heading" style="margin-bottom: 8px">Safety Standards Compliance Report:</h2>
+    <div class="heading-small" style="margin-bottom: 10px">
+      <h6>"Implementation of standards in accordance with the regulations set by the Oil and Gas Regulatory Authority (OGRA)."</h6>
+      <p>
+        We are pleased to report that our facility has diligently implemented and adhered to the safety standards prescribed by the Oil and Gas Regulatory Authority (OGRA). Our commitment to ensuring a secure and compliant working environment is reflected in the following key areas:
+      </p>
+    </div>
+  </div>
+ 
+
+  <div class="compliance-report">
+    <p>
+      <strong>Fire Water Spray System of Plant:</strong><br>
+      Our facility is equipped with a robust fire water spray system designed to swiftly respond to potential fire incidents, aligning with OGRA safety standards.
+    </p>
+  
+    <p>
+      <strong>Bowzer Decanting Point:</strong><br>
+      The decanting point for our bowsers strictly follows OGRA regulations, ensuring safe and efficient transfer operations.
+    </p>
+  
+    <p>
+      <strong>Storage Tanks:</strong><br>
+      All storage tanks on our premises adhere to OGRA standards for construction, maintenance, and safety protocols.
+    </p>
+  
+    <p>
+      <strong>Cylinder Filling Shed:</strong><br>
+      Our cylinder filling shed meets OGRA specifications, guaranteeing secure handling and filling procedures for LPG cylinders.
+    </p>
+  
+    <p>
+      <strong>Fire Fitting Drills:</strong><br>
+      Regular fire fitting drills are conducted to enhance our team's preparedness and response capabilities, aligning with OGRA guidelines.
+    </p>
+  
+    <p>
+      <strong>Water Storage Capacity:</strong><br>
+      Our facility maintains a water storage capacity of 60,000 gallons, meeting OGRA requirements for emergency response and firefighting.
+    </p>
+  
+    <p>
+      <strong>Flow Rate of 500 GPM for at Least 200 Hours (NFPA-58):</strong><br>
+      We adhere to the NFPA-58 standards, ensuring a flow rate of 500 gallons per minute for a minimum of 200 hours, reinforcing our commitment to safety and emergency preparedness.
+    </p>
+  
+    
+  
+    <p>
+      For more detailed information on our safety practices, please feel free to contact us or visit our facility. Your safety is our top priority.
+    </p>
+  </div>
+</div>
+
+<!-- safety-points.component.html -->
+<!-- safety-points.component.html -->
+<div class="team-section">
+  <div class="heading-teams">
+    
+    <div class="heading-small" style="margin-bottom: 10px">
+      
+      <p>
+        By implementing these measures, we affirm our dedication to meeting and exceeding the safety benchmarks set by OGRA. Our compliance is a testament to our unwavering commitment to the well-being of our employees, the community, and the environment.
+      </p>
+      <p>
+        For more detailed information on our safety practices, please feel free to contact us or visit our facility. Your safety is our top priority.
+      </p>
+    </div>
+  </div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12" *ngFor="let point of safetyPoints">
+      <div class="point-card">
+        <h3>{{ point.title }}</h3>
+        <p>{{ point.description }}</p>
+        <img [src]="point.images[0]" alt="{{ point.title }}" class="img-fluid" style="margin-bottom: 10px">
+        <img  *ngIf="point.images.length >1" [src]="point.images[1]" alt="{{ point.title }}" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>

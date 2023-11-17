@@ -1,0 +1,46 @@
+<section id="project-area" class="project-area solid-bg" >
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-12">
+          <h2 class="section-title">Work of Excellence</h2>
+          <h3 class="section-sub-title">Our Distributors</h3>
+        </div>
+      </div>
+      <!--/ Title row end -->
+
+      <section class="content" id="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div *ngFor="let distributor of displayedDistributors" class="col-md-4 mb-3">
+                  <div class="card distributor">
+                    <div class="card-body">
+                      <p class="card-text">
+                        <label class="distributor-label"> Distributor Name:</label> {{ distributor.name }}<br>
+                        <label class="distributor-label"> Complete Address:</label> {{ distributor.address }}<br>
+                        <label class="distributor-label"> City:</label> {{ distributor.city }}<br>
+                        <label class="distributor-label"> Province:</label> {{ distributor.province }}<br>
+                        <label class="distributor-label"> Name of Contact Person:</label> {{ distributor.contactPerson }}<br>
+                        <label class="distributor-label"> Mobile Number:</label> {{ distributor.mobileNumber }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Show more/less button -->
+              <div class="general-btn text-center">
+                <a class="btn btn-primary" (click)="toggleDisplay()">
+                  {{ showAllDistributors ? 'Show Less' : 'Show More' }}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- Content end -->
+     
+    </div>
+    <!--/ Container end -->
+  </section><!-- Project area end -->
+
+  <!-- Content section -->
