@@ -1,0 +1,28 @@
+<div class="team-section">
+  <div class="heading-teams">
+    <h2 class="heading" style="margin-bottom: 8px">Meet our management</h2>
+    <div class="heading-small" style="margin-bottom: 10px">
+      We’re building the future.
+    </div>
+  </div>
+  
+  <div class="row no-gutters justify-content-evenly py-3">
+    <div class="text-center team-Members col-6" *ngFor="let member of teamMembers"
+      style="width: 280px; margin-bottom: 10px;">
+      <img [src]="member.imgSrc" class="profile-image" alt="" srcset="" width="120px" height="150px" />
+      <p class="team-member">{{ member.name }}</p>
+      <h3 class="rank">{{ member.rank }}</h3>
+      <div class="socials d-flex justify-content-around">
+        <a [href]="member.twitter">
+          <img src="../../assets/images/icon-image/twitter.svg" alt="">
+        </a>
+        <a [href]="member.linkedin" class="center-icon">
+          <img src="../../assets/images/icon-image/linkedIn.svg" alt="">
+        </a>
+        <a [href]="member.website">
+          <img src="../../assets/images/icon-image/web.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

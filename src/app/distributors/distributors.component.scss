@@ -1,0 +1,14 @@
+/* distributors.component.css */
+
+.card.distributor {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Adjust the cubic-bezier values */
+}
+
+.card.distributor:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Add any additional styling you'd like here */
